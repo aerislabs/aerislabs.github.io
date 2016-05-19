@@ -27,6 +27,60 @@
       }
 
     </style>
+    
+    <!-- Separating Sendgrid widget styles -->
+    <style type="text/css">
+      .sendgrid-subscription-widget {
+        font-family: Helvetica;
+        width: 100%;
+        max-width: 15rem;
+      }
+
+      .sendgrid-subscription-widget input,
+      .sendgrid-subscription-widget .response {
+        width: 100%;
+        box-sizing: border-box;
+        border-radius: .28571429rem;
+      }
+
+      .sendgrid-subscription-widget input[type="email"] {
+        line-height: 1.2142em;
+        padding: .67861429em 1em;
+        font-size: 1em;
+        border: 1px solid rgba(34,36,38,.15);
+        color: rgba(0,0,0,.87);
+        box-shadow: 0 0 0 0 transparent inset;
+        -webkit-transition: color .1s ease,border-color .1s ease;
+        transition: color .1s ease,border-color .1s ease;
+      }
+
+      .sendgrid-subscription-widget input[type="submit"] {
+        display: inline-block;
+        padding: 15px;
+        margin-right: 5px;
+        height: 50px;
+        min-width: 100px;
+        background: #348AA7;
+        border: none;
+        outline: none;
+        color: white;
+        font-family: inherit;
+        font-size: 1.1em;
+        border-radius: 3px;
+        box-shadow: 0 5px 0px #348aa7;
+        border-bottom: 2px solid #30809b;
+      }
+      .sendgrid-subscription-widget input[type="submit"]:hover {
+        background: #2e7a94;
+        border-bottom: 2px solid #2a7088;
+        transition: all 0.05s ease-in;
+      }
+      .sendgrid-subscription-widget input[type="submit"]:active {
+        transform: translateY(4px);
+        border-bottom-width: 2px;
+        box-shadow: none;
+      }
+    </style>
   </head>
   <body>
     <div class="aeris--container">
@@ -38,6 +92,8 @@
         <path d="M599.8 6.3l3 .4s1.4 36 39.7 87.7c0 0-17.5 57.9-17.3 96.4l-25.4-.4m0-23.5c3.9-.4 6.9-3.7 6.9-7.7s-3-7.3-6.9-7.7"/>
       </svg>
 
+      <!-- Sendgrid sign-up form -->      
+      <div class="sendgrid-subscription-widget" data-token="CtBs5LIx3gfxgGoYkU0om2Jt%2BZCJ4cn%2BZbStF9WwCKlw4%2BtfVJLodtnWIYxUP8%2Fa"></div><script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?"http":"https";if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://s3.amazonaws.com/subscription-cdn/0.2/widget.min.js";fjs.parentNode.insertBefore(js,fjs);}}(document, "script", "sendgrid-subscription-widget-js");</script>
 
     </div>
   </body>
